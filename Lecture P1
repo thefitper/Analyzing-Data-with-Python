@@ -1,0 +1,50 @@
+Question 1
+1 point possible (ungraded)
+Each column contains a: attribute or feature
+
+Note, Libralies for data analysis is 
+
+-scientific computing libraries.
+--Pandas(data structure), The NumPy(array), SciPy(calculation)
+-data visualization
+--Matplotlib,Seaborn
+-Algorithm
+--Scikit-learn,Statsmodels
+===============================================================
+Pandas function
+#Note#
+Pandas has 3 data types.
+Object (string)
+float64 (float)
+int64 (integer)
+datetime64 (date)
+
+-df.dtypes() >> to check data type of the data frame.
+-df.describe() >> to show the statistical number of the data.
+-df.info() >> to show first 30 rows of the data.
+===============================================================
+Accessing Databases with Python
+#Note#
+this section talks about the python to connect with the DB via api.
+function are 
+cursor >> To returns new cursor object with new conneciton.
+commit >> use to commit any pending trancsaction.
+Rollback >> to cause the database to rollback any transaction from the start.
+close >> close the connection.
+
+sample code:
+from dbmodule import connect
+
+#create the connection object
+connection = connect('databasename','username','pswd')
+
+#create a cursor object
+cursor = connection.cursor()
+
+#run queries
+cursor.execute('select * from mytable')
+results = cursor.fetchall()
+
+#Free resources
+Cursor.close()
+connection.close()
