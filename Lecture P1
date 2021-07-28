@@ -48,3 +48,22 @@ results = cursor.fetchall()
 #Free resources
 Cursor.close()
 connection.close()
+
+Quiz: Importing the data
+Q1#
+What do we want to predict from the dataset?
+=price
+Q2#
+Select the libraries you will use for this course:
+=pandas
+Q3#
+What task does the following command perform?
+df.to_csv("A.csv")
+=Save the dataframe df to a csv file called "A.csv"
+Q4#
+Consider the segment of the following dataframe:
+=object
+Q5#
+How would you generate descriptive statistics for all the columns for the dataframe df?
+=df.describe(include = "all")
+Q6#
