@@ -1,1 +1,18 @@
-test1
+Correlation between variable
+Pearson correlation,
+
+corre coeffeicent,
+p-value
+
+correlation coeef
+-+1 large positive
+-1 large negative.
+
+p-value  < 0.001 very good.
+
+example.
+pearson_coef, p_value = stats.pearsonr(df['horsepower'],df['price'])
+
+we also can create the heatmap between each variable.
+
+https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DA0101EN/exploratory-data-analysis.ipynb?lti=true
