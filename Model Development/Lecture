@@ -1,0 +1,54 @@
+Model development
+
+-simple , multiple liner regression
+-model evaluation using visualzation
+-polynomial regression and pipeline
+-Rsq and MSE for insample evaluation
+-Prediction and Decision making
+
+model or estimater,
+more relevant data. more accurate
+
+3 kind of regression
+-simple >> simple indepentdent to the prediction
+
+y = b0 + b1x , b0 = intercept , b1 = slope
+python, 
+from sklearn.linear_model import LinearRegression
+lm = LinearRegression()
+x = df[['highway-mpf']]
+Y = df['price']
+lm.fit(X,Y)
+Yhat = lm.predict(X)
+
+-multiple >> multiple indepentdent 
+
+y = b0 + b1x1 + b2x2 + b3x3 + ....
+z = df[['highway-mpf','curb-weight','engine-size']]
+lm.fit(Z,df['price'])
+Yhat = lm.predict(X)
+
+-polynomial regression and pipeline
+for example exponential or cubic.
+use the preporcessing lib in scikit-learn to solve the fit function for higher order.
+or using the pipeline library
+normalizatrion >> polynomial >> linear regression
+
+
+Evaluation using visualization
+
+-Regression plot, use regplot in seaborn
+use the residual plot to evaluate the model. linear or non linear
+-distribution plot.
+
+measure for in sample evaluation.
+-MSE mean square error
+-R^2 r square.
+R-squared is also called the coefficient of determination. It’s a measure to determine
+how close the data is to the fitted regression line. So how close is our actual data to our
+
+near 1 = good fit to the data.
+
+#Prediction and decision making.
+hoe we determine that our model is correct ?
+
