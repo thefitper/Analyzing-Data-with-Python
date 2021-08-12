@@ -1,0 +1,21 @@
+ partially use some of data for train and testing.
+ like 70%/30%
+ 
+ #Function train_test_split()
+ randomly splits a dataset into training and testing subsets
+ from sklearn.model_selection import train_test_split
+ 
+ x_train,x_test,y_train,y_test = train_test_split(x_data,y_data, test_size=0.3,random_state=0)
+ 
+ use cross validation,
+ 
+ #Functino cross_val_score()
+ scores = cross_val_score(lr,x_data,y_data,cv=3)
+ 
+ overfitting , underfitting and model selection.
+ -how to pick the best polynomial function.
+ 
+ underfitting = too many noise
+ more orderring cause overfitting. (too flexible to data)
+ 
+ 
